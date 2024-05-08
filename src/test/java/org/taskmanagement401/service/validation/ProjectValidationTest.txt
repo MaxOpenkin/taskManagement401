@@ -1,0 +1,12 @@
+
+Объяснение:
+
+Метод @BeforeEach setUp() инициализирует новый экземпляр ProjectValidation перед каждым тестом.
+
+checkProject_ValidProject: Проверяет, что валидный проект не возвращает ошибок.
+
+checkProject_InvalidName и checkProject_InvalidDescription: Проверяют, что проекты с невалидными именем
+и описанием соответственно возвращают ошибки с ожидаемыми кодами.
+
+checkDescription_ValidDescription и checkDescription_InvalidDescription: Проверяют, что метод checkDescription
+корректно валидирует описание проекта, возвращая ошибки при несоответствии условиям.

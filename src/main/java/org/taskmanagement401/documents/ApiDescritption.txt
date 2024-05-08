@@ -1,0 +1,244 @@
+
+Работа с проектами:
+AddProjectMenu:
+Request:
+{
+  "name": "Project1",
+  "description": "This is project 1"
+}
+Response:
+{
+  "code": 200,
+  "object": {
+    "answer": "status ok"
+  }
+}
+"code": 400,
+    "object": {
+      "errors": {
+        "description": "The user with your login is already exist. Registration is impossible."
+        "statusCode": 404
+}
+"code": 400,
+    "object": {
+      "errors": {
+        "description": "Description errors "
+==================================================================
+
+Работа с задачами:
+TaskAddService:
+Request:
+{
+  "taskName": "Task1",
+  "endDate": "2024-03-21",
+  "statusPriority": 1
+}
+Response:
+{
+  "code": 200,
+  "object": {
+    "task": {
+      "taskId": 1,
+      "taskName": "Task1",
+      "endDate": "2024-03-21",
+      "statusPriority": 1
+    }
+  }
+  "code": 400,
+    "object": {
+      "errors": {
+        "description": "The user with your login is already exist. Registration is impossible."
+        "statusCode": 404
+}
+"code": 400,
+    "object": {
+      "errors": {
+        "description": "Description errors "
+
+=====================================================================================================================
+работа с комментарием
+Comment add:
+Request:
+{
+  "user": "Chapligin V",
+  "commentDto": "comment text",
+  "task": {
+    "taskName": "Task1",
+    "endDate": "2024-03-21",
+    "statusPriority": 1
+  }
+}
+Response:
+{
+  "commentDto": "comment text",
+  "user": "Chapligin V"
+}
+=======================================================================================================================
+
+Работа с чатом
+addNewSMS:
+Request:
+{
+  "commentDto": "SMS text",
+  "sender": "Chapligin V",
+  "receiver": 2            // id
+}
+Response:
+{
+  "code": 200,
+  "answer": "Status ok"
+}
+{
+ "code": 400,
+    "object": {
+      "errors": {
+        "description": "Description errors "
+}
+}
+===================================================================
+Регистрация
+RegistrationService:
+
+Request:
+{
+  "name": "Chapligin V",
+  "login": "Chapligin",
+  "password": "password4"
+}
+Response:
+{
+  "code": 200,
+  "object": {
+    "user": {
+      "name": "Chapligin V",
+      "login": "Chapligin",
+      "password": "password4"
+    }
+  }
+"code": 400,
+    "object": {
+      "errors": {
+        "description": "The user with your login is already exist. Registration is impossible."
+        "statusCode": 404
+}
+"code": 400,
+    "object": {
+      "errors": {
+        "description": "Description errors "
+}
+
+==========================================================================================
+Авторизация
+AuthorizationService:
+Request:
+{
+  "name": "Chapligin V",
+  "login": "Chapligin",
+  "password": "password4"
+}
+Response:
+{
+  "code": 200,
+  "object": {
+    "user": {
+      "name": "Chapligin V",
+      "login": "Chapligin",
+      "password": "password4"
+    }
+  }
+  "code": 400,
+      "object": {
+        "errors": {
+          "description": "Login or password is wrong."
+          "statusCode": 405
+  }
+  "code": 400,
+      "object": {
+        "errors": {
+          "description": "Description errors "
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
